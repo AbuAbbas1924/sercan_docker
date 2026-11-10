@@ -1,10 +1,10 @@
 #!/bin/bash
 
 build_dev(){
-    docker build -t build_pd -f Dockerfile .
+    docker build -t bpd2:build --target build -f Dockerfile-multi .
 }
 run_dev(){
-    docker run --name run_pd -p 8000:8000 build_pd
+    docker run --rm --name rpd2-dev -p 8000:8000 bpd2:build
 }
 
 $@

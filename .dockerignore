@@ -1,8 +1,14 @@
 .venv
+.git
+.gitignore
 __pycache__
 *.pyc
-.git
-.python-version.bak
-README.md
+.pytest_cache
+.ruff_cache
+.mypy_cache
+.env
+.env.*
 Dockerfile
 .dockerignore
+script.sh
+README.md
